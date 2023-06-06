@@ -4,6 +4,15 @@
     <title>Replenish Card</title>
 </head>
 <body>
-
+    <form method="post">
+        <input name="userNumberCard" type="text" placeholder="Enter number card">
+        <input name="howMuch" type="number" placeholder="How much">
+        <input type="submit">
+    </form>
+{{#message}}
+    {{message}}
+{{/message}}
+<a href="/OnlineCard/viewInfoCard">View balance</a>
+<a href="/">Main page</a>
 </body>
 </html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>View history Card</title>
+</head>
+<body>
+<form method="post">
+    <input name="userNumber" type="text" placeholder="Enter phone number">
+    <input name="userNumberCard" type="text" placeholder="Enter card number">
+    <input type="submit">
+</form>
+{{#errorMessage}}
+    <p>Error: {{errorMessage}}</p>
+{{/errorMessage}}
+{{#history}}
+    <h4>From: {{from}}</h4>
+    <h4>Sum: {{sum}}</h4>
+    <h4>Left on the balance: {{leftOnTheBalance}}</h4>
+    <h4>Time: {{time}}</h4>
+{{/history}}
+</body>
+</html>

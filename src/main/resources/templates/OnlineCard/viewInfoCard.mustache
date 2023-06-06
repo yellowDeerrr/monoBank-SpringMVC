@@ -4,6 +4,21 @@
     <title>View info card</title>
 </head>
 <body>
+<form method="post">
+    <input type="text" name="userNumber" placeholder="Enter phone number">
+    <input type="text" name="userNumberCard" placeholder="Enter number card">
+    <input type="submit">
+</form>
+
+{{#errorMessage}}
+    <p>Error: {{errorMessage}}</p>
+{{/errorMessage}}
+
+{{#user}}
+    <p>Phone Number: {{userNumber}}</p>
+    <p>Number Card: {{userNumberCard}}</p>
+    <p>Money: {{userMoney}}</p>
+{{/user}}
 
 </body>
 </html>

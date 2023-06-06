@@ -4,6 +4,12 @@
     <title>Create new card Mono</title>
 </head>
 <body>
-
+<form method="post">
+    <input name="userNumberToFind" type="text" placeholder="Enter your number">
+    <input type="submit">
+</form>
+{{#answer}}
+    <h2>{{answer}}</h2>
+{{/answer}}
 </body>
 </html>
