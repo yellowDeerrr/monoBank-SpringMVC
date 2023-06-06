@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin Control Panel</title>
+</head>
+<body>
+<form method="post">
+    <input name="history" type="text" placeholder="Enter history">
+    <input type="submit">
+</form>
+{{#history}}
+    <h3>Id: {{id}}   From: {{from}}   Sum: {{sum}}   Left on the balance: {{leftOnTheBalance}}   Time: {{time}}</h3>
+{{/history}}
+{{#users}}
+    <h3>Id: {{id}}   User Number: {{userNumber}}    User Number Card: {{userNumberCard}}   User money: {{userMoney}}</h3>
+{{/users}}
+</body>
+</html>
